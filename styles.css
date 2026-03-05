@@ -1,0 +1,149 @@
+:root {
+  --bg: #f7f8fc;
+  --text: #1f2937;
+  --primary: #6366f1;
+  --card: #ffffff;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.7;
+  color: var(--text);
+  background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 30%);
+}
+
+.hero {
+  padding: 2rem 1.25rem 4rem;
+}
+
+.navbar {
+  max-width: 960px;
+  margin: 0 auto 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tag {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.hero-content h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-bottom: 1rem;
+}
+
+.intro {
+  max-width: 620px;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 0.6rem;
+}
+
+.post-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.post-list article {
+  padding: 0.9rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fcfcff;
+}
+
+.post-list h4 {
+  margin-bottom: 0.35rem;
+}
+
+.post-list p {
+  color: var(--muted);
+}
+
+.post-list span {
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+#contact a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 1.4rem;
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+}
